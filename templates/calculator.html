@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+      <form action="/send" method="POST">
+        <label for="Number One">First Number</label>
+        <input
+          type="text"
+          placeholder="First Number"
+          name="num1"
+        />
+
+        <label for="Number Two">Second Number</label>
+        <input
+          type="text"
+          placeholder="Second Number"
+          name="num2"
+        />
+
+        <label for="Operation">Operation</label>
+        <select name="operation">
+          <option value="add">Add</option>
+          <option value="subtract">Subtract</option>
+          <option value="multiply">Multiply</option>
+          <option value="divide">Divide</option>
+        </select>
+
+          <input style="background-color: aliceblue " type="submit" value="Calculate" />
+        <br />
+        <p>
+        <div class="alert">
+          {{ sum }}
+        </div>
+
+      </form>
+</div>
+</body>
+</html>
+
+# При запросе по урлу /word/[word], в случае если длина слова четна - выводит строку,
+# содержащую все нечетные элементы строки (abcde -> ace). В ином случае просто выводит слово.
+
